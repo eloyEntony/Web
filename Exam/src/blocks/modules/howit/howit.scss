@@ -1,0 +1,92 @@
+.how_it {
+  background-color: $color_main_2;
+  padding-bottom: 70px;
+  .how_it_header {
+    justify-content: center;
+    padding: 70px;
+    text-transform: unset;
+  }
+
+  .my_row {
+    position: relative;
+    top: 152px;
+  }
+
+  .dashed_line {
+    display: block;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px dashed gray;
+  }
+
+  .first_row {
+    p {
+      text-transform: uppercase;
+      color: $color_btn_text_gray;
+      font-family: Regular;
+      display: inline-block;
+      margin: 19px;
+      vertical-align: top;
+      line-height: 1;
+    }
+  }
+
+  .second_row {
+    text-align: center;
+    position: relative;
+    bottom: 13px;
+    p {
+      text-transform: uppercase;
+      color: $color_btn_text_gray;
+      font-family: Regular;
+      display: inline-block;
+      margin: 19px;
+      text-align: left;
+      line-height: 1;
+    }
+  }
+
+  h3 {
+    font-family: Regular;
+    font-size: 36px;
+    color: $color_text_white;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .how_it_block {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .point_line {
+    display: inline-block;
+    text-align: center;
+    height: 64px;
+    width: 1px;
+    background-color: #666666;
+  }
+
+  .point_yellow_line {
+    margin-bottom: -4px;
+  }
+
+  .point_yellow {
+    margin: auto;
+    height: 15px;
+    width: 15px;
+    background-color: #f2c40e;
+    border: 1px solid gray;
+    border-radius: 50%;
+  }
+
+  .point_blue {
+    margin: auto;
+    margin-top: -5px;
+    height: 15px;
+    width: 15px;
+    background-color: #2a80b9;
+    border: 1px solid gray;
+    border-radius: 50%;
+  }
+}

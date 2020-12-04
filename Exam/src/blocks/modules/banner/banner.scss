@@ -1,0 +1,75 @@
+.banner_bg {
+  background: $color_main_2;
+  //height: 465px;
+  background-image: url(../../../img/img_header.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 60px;
+  padding-bottom: 1px;
+}
+
+.spesial_offer_bg {
+  background: $color_main_1;
+  height: 50px;
+}
+
+.btn_live_chat {
+  margin-right: 55px;
+}
+
+a {
+  //text-decoration: none;
+  color: #002157;
+}
+h3 {
+  font-family: Bold;
+  text-transform: uppercase;
+  color: $color_text_white;
+  font-size: 52px;
+}
+
+.key {
+  justify-content: center;
+}
+h4 {
+  font-family: SemiBold;
+  text-transform: uppercase;
+  color: $color_text_white;
+  font-size: 36px;
+  margin: 20px;
+}
+
+h5 {
+  font-family: Light;
+  font-size: 27px;
+  text-transform: uppercase;
+  color: $color_text;
+  margin-bottom: 25px;
+}
+
+h6 {
+  font-family: Light;
+  font-size: 20px;
+  color: $color_text;
+  margin-bottom: 30px;
+}
+
+.texts {
+  margin-bottom: 40px;
+  padding-left: 350px;
+}
+
+.btn_order_now {
+  margin-bottom: 15px;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: $color_text_white;
+  font-family: Regular;
+}
+
+.btn_list_discount {
+  margin: 10px 119px;
+}

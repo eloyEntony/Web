@@ -1,0 +1,77 @@
+.how_it {
+  h2 {
+    background-color: $color_bg_btn_hover;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px;
+    padding-left: 18px;
+    box-shadow: 2px 4px 7px rgba(2, 68, 121, 0.75);
+
+    &::before {
+      content: "";
+      display: inline-block;
+      border-top: 15px solid $color_bg_btn_hover;
+      border-right: 20px solid transparent;
+      position: relative;
+      top: 33px;
+      right: 450px;
+    }
+  }
+  .num {
+    display: inline;
+    font-weight: bold;
+    color: $color_bg_btn_hover;
+    font-size: 45px;
+  }
+  h4 {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    position: relative;
+    bottom: 8px;
+  }
+  .part {
+    border-bottom: 3px solid $color_bg_btn_hover;
+    padding-left: 20px;
+    cursor: pointer;
+    &:hover {
+      background-color: $color_main_2;
+    }
+    &:last-child:hover {
+      color: white;
+    }
+  }
+  .box {
+    height: 335px;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 2px 4px 7px rgba(2, 68, 121, 0.75);
+    img {
+      height: 100px;
+      width: 100px;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+  a {
+    width: 300px;
+    margin: 50px;
+    align-content: center;
+    padding: 10px;
+    &::before {
+      content: "";
+      display: inline-block;
+      border-top: 15px solid $color_btn_order;
+      border-right: 20px solid transparent;
+      position: relative;
+      top: 31px;
+      right: 65px;
+    }
+    &::before:hover {
+      border-top: 15px solid $color_bg_btn_hover;
+    }
+  }
+}

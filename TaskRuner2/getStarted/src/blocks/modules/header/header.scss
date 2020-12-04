@@ -1,0 +1,107 @@
+.header {
+  .bg_main_2 {
+    text-align: center;
+    background-color: $color_main_2;
+    background-image: url(../../../img/Bg1.png);
+    background-position: center;
+  }
+
+  .navbar {
+    right: 100px;
+  }
+  span,
+  a {
+    @media screen and (max-width: 1199px) {
+      font-size: 15px;
+    }
+    color: $color_text_btn_white;
+    font-family: Regular;
+    font-size: 20px;
+    padding: 20px 0;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  span {
+    margin-right: 5px;
+  }
+
+  .login::after {
+    content: "";
+    background-color: #fff;
+    display: inline-block;
+    width: 3px;
+    height: 17px;
+    border-radius: 2px;
+  }
+
+  .chat {
+    padding-left: 30px;
+  }
+
+  .navbar_r {
+    background-color: $color_main_1;
+    text-align: justify;
+    @media screen and (max-width: 991px) {
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      @media screen and (max-width: 1199px) {
+        margin: 0 auto;
+      }
+    }
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+    a {
+      @media screen and (max-width: 1199px) {
+        padding: 5px 9px;
+      }
+      padding: 10px 18px;
+      text-transform: uppercase;
+    }
+    li::after {
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
+      content: "";
+      border-right: 3px solid white;
+      border-radius: 3px;
+    }
+    li:last-child::after {
+      content: "";
+      display: none;
+    }
+    a:hover {
+      background-color: $color_bg_btn_hover;
+      color: $color_black;
+    }
+    li:hover::after {
+      content: "";
+      border-right: 3px solid transparent;
+    }
+
+    .login_chat_adaptive {
+      margin: 10px;
+      a {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .navigation {
+    display: block;
+    width: 100%;
+  }
+
+  .header_top {
+    @media screen and (max-width: 1199px) {
+      .tablet {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.head_bg {
+  background: $color_main_1;
+}
+
+.phone {
+  margin: auto;
+  font-family: Regular;
+  font-size: 18px;
+  color: $color-text_white;
+}
+.join {
+  font-family: Regular;
+  color: $color-text_white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar_r {
+  background-color: $color-text_white;
+  margin: 14px 0 14px 0;
+  padding: 0;
+
+  .col {
+    display: contents;
+  }
+
+  .logo {
+    width: 230px;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    display: inline-block;
+    a {
+      font-family: Bold;
+      font-size: 14px;
+      color: $color_text;
+      margin: 6px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      text-decoration: none;
+      padding-bottom: 15px;
+
+      &:hover {
+        border-bottom: 3px solid $color_btn_hover;
+      }
+    }
+  }
+  .order_now {
+    color: $color_btn_hover;
+  }
+}

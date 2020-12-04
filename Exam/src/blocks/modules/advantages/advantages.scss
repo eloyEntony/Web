@@ -1,0 +1,38 @@
+.header_adv {
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.adv_blocks {
+  div {
+    height: 150px;
+    margin-top: 15px;
+
+    a {
+      background: $color_main_2;
+      display: block;
+      height: 150px;
+      width: 365px;
+      padding-top: 40px;
+      img {
+        display: block;
+        margin: auto;
+      }
+      p {
+        font-family: Regular;
+        font-size: 14px;
+        color: $color_text;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 40px;
+      }
+      &:hover {
+        background: $color_btn_hover;
+        p {
+          color: $color_text_white;
+        }
+      }
+    }
+  }
+}

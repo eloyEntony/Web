@@ -1,0 +1,89 @@
+.main_bg {
+  background: url(../../../img/bg_girl.png) no-repeat center;
+
+  .banner_adaptive {
+    @media screen and (max-width: 991px) {
+      display: inline-block;
+    }
+  }
+  img {
+    margin: 10px;
+    height: 78px;
+  }
+
+  .label {
+    background-color: $color_bg_btn_hover;
+    text-align: center;
+
+    h1 {
+      text-transform: uppercase;
+      padding: 10px;
+    }
+  }
+
+  h3 {
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight: normal;
+  }
+
+  ul {
+    margin-top: 0;
+    margin-left: 50px;
+    margin-bottom: 30px;
+
+    li {
+      margin-bottom: 5px;
+      margin-top: 0;
+      font-size: 16px;
+      font-family: Regular;
+      list-style-type: none;
+    }
+
+    li::before {
+      content: "";
+      border: 5px solid $color_main_1;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      margin-right: 50px;
+      display: block;
+
+      position: relative;
+      left: -40px;
+      top: 15px;
+    }
+  }
+
+  .button_link {
+    margin-bottom: 30px;
+
+    a {
+      border: 1px solid $color_main_1;
+      background: transparent;
+      width: 230px;
+      height: 35px;
+      padding: 3px;
+      margin: 5px;
+      font-family: Regular;
+      font-size: 18px;
+      color: $color_main_1;
+      text-decoration: none;
+      text-align: center;
+      position: relative;
+      left: 50px;
+    }
+    a:hover {
+      color: $color_black;
+      border: 1px solid $color_black;
+    }
+  }
+
+  .offer_list_and_buttons {
+    margin-top: 30px;
+    position: relative;
+    left: 20px;
+  }
+}

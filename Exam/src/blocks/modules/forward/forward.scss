@@ -1,0 +1,22 @@
+.forward {
+  margin-top: 30px;
+
+  .forward_header {
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .text {
+    margin-top: 20px;
+    column-count: 2;
+    column-gap: 30px;
+    p {
+      font-size: 14px;
+      font-family: Light;
+      color: $color_btn_text_gray;
+      margin: 0 0 11px;
+    }
+    text-align: justify;
+  }
+}

@@ -1,0 +1,124 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Bold;
+  font-size: 36px;
+  color: $color_text;
+}
+h2 {
+  font-family: Regular;
+  font-size: 36px;
+  color: $color_text;
+}
+a {
+  text-decoration: none;
+}
+
+.btn_order_now {
+  height: 70px;
+  width: 270px;
+  text-align: center;
+  display: inline-block;
+  padding: 20px;
+  background-color: $color_btn_hover;
+  font-family: Bold;
+  font-size: 18px;
+  color: $color_text_white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid $color_text_white;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #fab916;
+    border: 1px solid black;
+    text-decoration: none;
+  }
+}
+
+.btn_read_more {
+  height: 54px;
+  width: 188px;
+  text-align: center;
+  font-family: SemiBold;
+  font-size: 18px;
+  padding: 18px;
+  text-transform: uppercase;
+  background-color: $color_main_1;
+  color: $color_text_white;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $color_btn_hover;
+    color: $color_text_white;
+  }
+}
+
+.back_how_it {
+  font-size: 18px;
+  padding: 18px;
+  min-width: 80px;
+  min-height: 80px;
+  background-color: $color_btn_hover;
+  border: 2px solid $color_text_white;
+  color: $color_text_white;
+  text-align: center;
+}
+
+.btn_live_chat {
+  height: 54px;
+  width: 188px;
+  text-align: center;
+  font-family: SemiBold;
+  font-size: 18px;
+  padding: 12px;
+  background-color: $color_main_1;
+  border: 2px solid $color_text_white;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color_text_white;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $color_btn_hover;
+    color: $color_text_white;
+    text-decoration: none;
+  }
+}
+
+.btn_list_discount {
+  height: 30px;
+  font-family: Light;
+  font-size: 16px;
+  padding: 3px 40px;
+  border-radius: 5px;
+  border: 2px solid $color_text_white;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color_text_white;
+  text-align: center;
+
+  &:hover {
+    background-color: $color_btn_hover;
+    color: $color_text_white;
+    text-decoration: none;
+  }
+}
+
+.container {
+  @include container();
+  @include sm(max-width, rem(510));
+  @include md(max-width, rem(690));
+  @include lg(max-width, rem(930));
+  @include xl(max-width, rem(1110));
+}

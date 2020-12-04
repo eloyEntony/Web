@@ -1,0 +1,41 @@
+.read_more {
+  text-align: center;
+  h2 {
+    font-size: 36px;
+    margin-top: 69px;
+  }
+  p,
+  li {
+    font-size: 14px;
+    font-family: Light;
+    color: $color_btn_text_gray;
+    margin: 0 0 11px;
+    text-align: justify;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    &::before {
+      content: "\f105";
+      font-family: FontAwesome;
+      display: inline-block;
+      margin-left: -1.3em;
+      width: 1.3em;
+      color: $color_btn_hover;
+      font-size: 20px;
+      margin-top: -50px;
+    }
+  }
+  .text_block {
+    height: 330px;
+    margin-top: 27px;
+    margin-bottom: 35px;
+  }
+}
