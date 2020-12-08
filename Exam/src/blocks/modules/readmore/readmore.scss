@@ -34,8 +34,22 @@
     }
   }
   .text_block {
-    height: 330px;
     margin-top: 27px;
     margin-bottom: 35px;
+  }
+
+  @media screen and (max-width: 991px) {
+    h2 {
+      margin-top: 0;
+    }
+    .text_block {
+      padding: 0 15px 0 45px;
+    }
+    .second_block {
+      margin-top: 45px;
+      .text_block {
+        padding: 0;
+      }
+    }
   }
 }

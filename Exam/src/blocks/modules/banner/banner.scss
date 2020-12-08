@@ -73,3 +73,53 @@ p {
 .btn_list_discount {
   margin: 10px 119px;
 }
+
+.paddind_none {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.abapriv_bg {
+  background-color: $color_main_2;
+
+  .abapriv_banner {
+    height: 330px;
+    background: url(../../../img/book_1.png), url(../../../img/book_2.png);
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 100%;
+    background-size: contain;
+  }
+
+  .adaptiv_banner_content {
+    text-align: center;
+  }
+
+  h3 {
+    padding-top: 35px;
+    font-size: 38px;
+  }
+  h4 {
+    padding-top: 20px;
+    font-size: 24px;
+  }
+  .btn_order_now {
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 991px) {
+    h3 {
+      font-size: 48px;
+    }
+  }
+
+  @media screen and (max-width: 696px) {
+    h3 {
+      font-size: 38px;
+    }
+  }
+  @media screen and (max-width: 558px) {
+    h3 {
+      font-size: 30px;
+    }
+  }
+}

@@ -1,3 +1,8 @@
+@media screen and (max-width: 1200px) {
+  .how_it {
+    margin-top: 20px;
+  }
+}
 .how_it {
   background-color: $color_main_2;
   padding-bottom: 70px;
@@ -7,6 +12,14 @@
     text-transform: unset;
   }
 
+  .block_5 {
+    padding-left: 90px;
+  }
+  @media screen and (max-width: 1200px) {
+    .block_5 {
+      padding-left: 45px;
+    }
+  }
   .my_row {
     position: relative;
     top: 152px;
@@ -28,6 +41,7 @@
       margin: 19px;
       vertical-align: top;
       line-height: 1;
+      margin-right: 0;
     }
   }
 

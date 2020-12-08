@@ -5,10 +5,34 @@
   padding: 5px;
   text-align: center;
 
+  @media screen and (max-width: 1200px) {
+    img {
+      height: 65px;
+    }
+  }
   p {
     font-size: 14px;
     padding: 0;
     margin: 0;
+
+    @media screen and (max-width: 991px) {
+      font-size: 10px;
+    }
+  }
+
+  .emails {
+    @media screen and (max-width: 1200px) {
+      margin-top: 10px;
+      p {
+        font-size: 12px;
+      }
+    }
+    @media screen and (max-width: 870px) {
+      margin-top: 20px;
+      p {
+        font-size: 10px;
+      }
+    }
   }
 
   a {
@@ -20,12 +44,19 @@
     width: 30px;
     height: 30px;
     bottom: -16px;
-    right: 2%;
+    right: 4%;
     border: 1px solid $color_text_white;
     background-color: $color_btn_hover;
     color: $color_text_white;
     font-size: 25px;
     justify-content: center;
+
+    @media screen and (max-width: 1200px) {
+      bottom: 8px;
+    }
+    @media screen and (max-width: 991px) {
+      bottom: -16px;
+    }
   }
 }
 
@@ -50,14 +81,28 @@
   text-align: center;
   padding: 10px;
 
+  @media screen and (max-width: 991px) {
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 15px;
+  }
   .join_footer {
     font-family: Regular;
     color: $color-text_white;
     font-size: 16px;
     margin: auto;
+    @media screen and (max-width: 991px) {
+      font-size: 12px;
+    }
   }
   p {
     margin: revert;
+    @media screen and (max-width: 767px) {
+      margin: 0;
+    }
   }
 }
 
@@ -69,6 +114,26 @@
 
   img {
     height: 77px;
+  }
+  @media screen and (max-width: 1200px) {
+    img {
+      height: 65px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    height: 75px;
+    padding: 7px;
+    img {
+      height: 60px;
+    }
+  }
+
+  @media screen and (max-width: 870px) {
+    padding: 10px;
+    img {
+      height: 50px;
+    }
   }
 }
 
