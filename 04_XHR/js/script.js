@@ -39,11 +39,9 @@ function CashCurrency(data){
     //root.appendChild(sp);
     //console.log(root);
 
-
-
     for(let i=0; i<data.length; i++){
         let tr = document.createElement("tr");
-        
+
         let th = document.createElement("th");
         th.setAttribute("scope", "row");
 
@@ -60,7 +58,6 @@ function CashCurrency(data){
 
         root.appendChild(tr);
     }
-
 }
 
 function CardCurrency(currency){
@@ -71,7 +68,6 @@ function CardCurrency(currency){
         console.log(item);
     })
 }
-
 
 Request(URL, CashCurrency);
 Request(URL2, CardCurrency);
