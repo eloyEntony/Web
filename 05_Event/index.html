@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" /> 
+    <link rel="stylesheet" href="css/bootstrap.min.css" /> 
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <table  class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">Currency</th>
+              <th scope="col">Buy</th>
+              <th scope="col">Sale</th>
+            </tr>
+          </thead>
+          <tbody id="root"></tbody>
+        </table>
+      </div>
+    </div>
+    
+
+    <div class="row">
+      <div class="col-lg-2">
+        <ul class="list-group">
+          <li class="list-group-item">USD : <span id="usd">100</span></li>
+          <li class="list-group-item">EUR : <span id="eur">2319</span></li>
+          <li class="list-group-item">RUR : <span id="rur">3200</span></li>
+          <li class="list-group-item">BTC : <span id="btc">2.3</span></li>
+        </ul>        
+      </div>
+      <div class="col-lg-6">
+        <div class="row">
+          <input class="form-control" type="text" placeholder="input" style="margin-bottom: 10px; width: 70%;" id="main_input">
+          <label style="width: 30%; display: inline-block; text-align: center;">UAH</label>
+        </div>
+        
+
+        
+        <div class="row card">
+          <div class="card-body">
+            <h5 class="card-title">You get: </h5>
+            <p class="card-text" style="font-size: 30px;"></p>
+            <button type="button" class="btn btn-dark get_currency" id="get">GET</button> 
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4">
+
+        <div class="form-check form-check-inline" style="float: left; font-size: 50px;">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="buy" value="option1">
+          <label class="form-check-label" for="buy">BUY</label>
+        </div>
+
+        <div class="form-check form-check-inline" style="float: right; font-size: 50px;">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="sale" value="option2">
+          <label class="form-check-label" for="sale">SALE</label>
+        </div>
+
+          <select class="custom-select" style="margin-bottom: 10px;">
+            <!-- <option value="0" selected>Change currency</option>
+            <option value="1">UAH - USD</option>
+            <option value="2">UAH - EUR</option>
+            <option value="3">UAH - RUR</option>
+            <option value="4">UAH - BTC</option> --> -->
+          </select>
+
+        <!-- <button type="button" class="btn btn-dark get_currency" id="">Get currency</button> -->
+      </div>
+    </div>
+    
+  </div>
+   
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+</html>
