@@ -28,32 +28,41 @@
     <div class="row">
       <div class="col-lg-2">
         <ul class="list-group">
-          <li class="list-group-item">USD : <span id="usd">100</span></li>
-          <li class="list-group-item">EUR : <span id="eur">2319</span></li>
+          <li class="list-group-item">USD : <span id="usd">2060</span></li>
+          <li class="list-group-item">EUR : <span id="euro">2319</span></li>
           <li class="list-group-item">RUR : <span id="rur">3200</span></li>
           <li class="list-group-item">BTC : <span id="btc">2.3</span></li>
+          <li class="list-group-item">UAH : <span id="uah">15000</span></li>
         </ul>        
       </div>
       <div class="col-lg-6">
         <div class="row">
-          <input class="form-control" type="text" placeholder="input" style="margin-bottom: 10px; width: 70%;" id="main_input">
-          <label style="width: 30%; display: inline-block; text-align: center;">UAH</label>
+          <input class="form-control" type="number" placeholder="Give" style="font-size: 20px; margin-bottom: 10px; width: 65%; margin-right: 28px;" id="main_input">
+          <!-- <label id="you_give" style="width: 30%; display: inline-block; text-align: center; font-size: 20px;">UAH</label> -->
+          <select id="give_select" class="custom-select" style="margin-bottom: 10px; width: 30%; font-size: 20px; display: inline-block;">
+            <option value="0">From</option>
+            <option value="1">UAH</option>
+            <option value="2">USD</option>
+            <option value="3">EUR</option>
+            <option value="4">RUR</option>
+            <option value="5">BTC</option>
+          </select>
         </div>
         
 
         
         <div class="row card">
           <div class="card-body">
-            <h5 class="card-title">You get: </h5>
+            <h5 class="card-title">You get: <span id="get_currency"></span> </h5>            
             <p class="card-text" style="font-size: 30px;"></p>
-            <button type="button" class="btn btn-dark get_currency" id="get">GET</button> 
+            <button type="button" class="btn btn-dark get_currency" style="width: 150px;" id="get">GET</button> 
           </div>
         </div>
 
       </div>
       <div class="col-lg-4">
 
-        <div class="form-check form-check-inline" style="float: left; font-size: 50px;">
+        <!-- <div class="form-check form-check-inline" style="float: left; font-size: 50px;">
           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="buy" value="option1">
           <label class="form-check-label" for="buy">BUY</label>
         </div>
@@ -61,18 +70,15 @@
         <div class="form-check form-check-inline" style="float: right; font-size: 50px;">
           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="sale" value="option2">
           <label class="form-check-label" for="sale">SALE</label>
-        </div>
-
-          <select class="custom-select" style="margin-bottom: 10px;">
-            <!-- <option value="0" selected>Change currency</option>
-            <option value="1">UAH - USD</option>
-            <option value="2">UAH - EUR</option>
-            <option value="3">UAH - RUR</option>
-            <option value="4">UAH - BTC</option> --> -->
+        </div> -->
+          <!-- <select class="custom-select" id="get_select" style="margin-bottom: 10px; font-size: 20px;"></select> -->
+          <select class="custom-select" id="get_select" style="margin-bottom: 10px; font-size: 20px;">
+            <!-- <option value="0">To</option> -->
           </select>
-
-        <!-- <button type="button" class="btn btn-dark get_currency" id="">Get currency</button> -->
-      </div>
+          <button id="btn_convert" type="button" class="btn btn-dark get_currency" style="width: 100%;
+          height: 60px;
+          font-size: 20px;">Convert</button>
+        </div>
     </div>
     
   </div>
