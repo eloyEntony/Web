@@ -12,11 +12,16 @@
     <div class="weather-side">
       <div class="weather-gradient"></div>
       <div class="date-container">
-        <h2 class="date-dayname">Tuesday</h2><span class="date-day">15 Jan 2019</span><i class="location-icon" data-feather="map-pin"></i><span class="location">Paris, FR</span>
+          <h2 class="date-dayname" id="day">Tuesday</h2>
+          <span class="date-day" id="date">15 Jan 2019</span>
+          <i class="location-icon" data-feather="map-pin"></i>
+          <span class="location" id="locationValue">Paris, FR</span>
+
       </div>
       <div class="weather-container"><i class="weather-icon" data-feather="sun"></i>
-        <h1 class="weather-temp">29°C</h1>
-        <h3 class="weather-desc">Sunny</h3>
+        <img src="img/weather_3.svg" >
+        <h1 class="weather-temp" id="tempValue">29<span>°C</span></h1>
+        <h3 class="weather-desc" id="weatherValue">Sunny</h3>
       </div>
     </div>
     <div class="info-side">
@@ -28,7 +33,7 @@
           <div class="humidity"> <span class="title">HUMIDITY</span><span class="value">34 %</span>
             <div class="clear"></div>
           </div>
-          <div class="wind"> <span class="title">WIND</span><span class="value">0 km/h</span>
+          <div class="wind"> <span class="title">WIND</span><span class="value" id="windValue">0 <span>km/h</span></span>
             <div class="clear"></div>
           </div>
         </div>
@@ -43,10 +48,21 @@
         </ul>
       </div>
       <div class="location-container">
-        <button class="location-button"> <i data-feather="map-pin"></i><span>Change location</span></button>
+        
+          <input class="c-checkbox" type="checkbox" id="checkbox" > 
+          <div class="c-formContainer">
+            <form class="c-form" action="">
+              <input class="c-form__input" placeholder="City" type="text" >
+              <label class="c-form__buttonLabel" for="checkbox">               
+                <button class="c-form__button" type="button">Search</button>
+              </label>
+              <label class="c-form__toggle" for="checkbox" data-title="Change location"></label>
+            </form>
+          </div>
+        <!-- <button class="location-button"> <i data-feather="map-pin"></i><span>Change location</span></button> -->
       </div>
     </div>
   </div>
 </body>
-<script>src="js/index.js"</script>
+<script src="js/index.js"></script>
 </html>
