@@ -277,7 +277,7 @@ body {
   + .c-formContainer
   .c-form__input:required:valid
   ~ .c-form__toggle {
-  /* pointer-events: none; */
+  /* pointer-events: auto; */
   /* cursor: default; */
 }
 
