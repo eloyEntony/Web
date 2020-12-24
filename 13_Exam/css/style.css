@@ -1,8 +1,16 @@
+body {
+  background-color: #1a1a1d;
+}
+
 h1 {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  color: brown;
+  color: white;
+}
+
+label {
+  color: white;
 }
 
 .alert {
@@ -28,4 +36,14 @@ p {
 
 .closebtn:hover {
   color: black;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+td,
+th {
+  color: white;
 }

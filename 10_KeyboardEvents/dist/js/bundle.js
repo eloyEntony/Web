@@ -111,3 +111,6 @@ var firebaseConfig = {
   function DeleteData(){
     firebase.database().ref('metrix').remove()    
   }
+
+
+  
