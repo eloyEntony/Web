@@ -53,6 +53,14 @@ p {
   border-radius: 15px;
   box-shadow: 2px 2px 1px 1px #222;
   width: 50px;
+  cursor: pointer;
+}
+.calc-row div:hover {
+  background-color: #555;
+}
+.calc-row div:active {
+  width: 40px;
+  margin: 7px 10px;
 }
 
 .calc-row div.zero {

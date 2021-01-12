@@ -126,6 +126,7 @@ function Equal(){
    
   document.querySelector(".screen").innerHTML += '=' + res
 
+  Request(document.querySelector(".screen").innerHTML)
 }
 
 function Present(){
@@ -142,6 +143,7 @@ function Sqrt(){
     console.log(this.textContent);
 
     document.querySelector(".screen").innerHTML = `&radic;(${digitFirst})=${Math.sqrt(digitFirst)}`  
+    Request(document.querySelector(".screen").innerHTML)
   }
 }
 
@@ -161,4 +163,18 @@ function ClearAll(){
   digitSecond = 0
   firtsNumber = []
   document.querySelector(".screen").innerHTML = '0'
+}
+
+//! work withs database
+const DATABASE_URL  = "https://calcdb-default-rtdb.firebaseio.com/calc.json"
+
+function Request(screen){
+
+  fetch(DATABASE_URL,{
+       method: 'POST',
+       body: JSON.stringify(screen),
+       headers:{
+         'Content-Type': 'application/json'
+       }
+   })
 }
