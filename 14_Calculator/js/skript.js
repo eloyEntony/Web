@@ -19,6 +19,12 @@ function Init(){
     document.querySelector(".multiply").addEventListener("click", Multiply);
     document.querySelector(".divice").addEventListener("click", Divice);
     document.querySelector(".equal").addEventListener("click", Equal);
+
+    document.querySelector(".present").addEventListener('click', Present);
+    document.querySelector(".root").addEventListener('click', Sqrt);
+    document.querySelector(".ce").addEventListener('click', Ce);
+    document.querySelector(".clear").addEventListener('click', ClearAll);
+
 }
 
 let digitFirst;
@@ -68,7 +74,6 @@ function Association(){
   firtsNumber = []
 }
 
-
 function Digrise(){
   document.querySelector(".screen").innerHTML += '-'
   Association()
@@ -112,10 +117,48 @@ function Equal(){
    case '*':
         res = digitFirst * digitSecond
       break;
+    case '%':
+        res = (digitFirst * digitSecond) / 100
+      break;
     default:
       break;
   }
    
   document.querySelector(".screen").innerHTML += '=' + res
 
+}
+
+function Present(){
+  document.querySelector(".screen").innerHTML += '%'
+  Association();
+  doing = '%'
+}
+
+function Sqrt(){
+  if(firtsNumber!= null){
+
+    digitFirst = parseInt(firtsNumber.reduce((a, b) => a + b, 0))
+    console.log(digitFirst)
+    console.log(this.textContent);
+
+    document.querySelector(".screen").innerHTML = `&radic;(${digitFirst})=${Math.sqrt(digitFirst)}`  
+  }
+}
+
+function Ce(){  
+  digitSecond = parseInt(firtsNumber.reduce((a, b) => a + b, 0))
+  console.log(digitSecond)
+  if(digitSecond!= 0){
+    digitSecond = 0;
+    firtsNumber = [];
+    console.log(digitSecond)
+    document.querySelector(".screen").innerHTML = tmpScreen
+  }
+}
+
+function ClearAll(){
+  digitFirst = 0
+  digitSecond = 0
+  firtsNumber = []
+  document.querySelector(".screen").innerHTML = '0'
 }
