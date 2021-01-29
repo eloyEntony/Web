@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "7e0TczO9Se3au6LgzSNZXUkP3ctkP3+PEiLiSicrtUImqvCuyqOLNrGClobMReiNdPZM3bC4dBNkt7Avx8EkCQ==",
+  "dgSpecHash": "c/DHZ3VpYxOiyIwmicga2sYXar1ioFYtGODiOGT64hHUx/JT/ugx0WY7F7DOh8Mqv7PP1zyWV2OyXx6rFhQp8A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Anton\\Cod\\ASP.NET\\ASP_01_TestProject\\ASP_01_TestProject.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Anton\\.nuget\\packages\\docker.dotnet\\3.125.4\\docker.dotnet.3.125.4.nupkg.sha512",
+    "C:\\Users\\Anton\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\Anton\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Anton\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512"
+  ],
   "logs": []
 }
