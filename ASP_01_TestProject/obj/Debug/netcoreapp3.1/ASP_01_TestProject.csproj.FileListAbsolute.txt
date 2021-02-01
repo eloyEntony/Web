@@ -33,3 +33,5 @@ C:\Users\Anton\Cod\ASP.NET\ASP_01_TestProject\obj\Debug\netcoreapp3.1\ASP_01_Tes
 C:\Users\Anton\Cod\ASP.NET\ASP_01_TestProject\obj\Debug\netcoreapp3.1\ASP_01_TestProject.genruntimeconfig.cache
 C:\Users\Anton\Cod\ASP.NET\ASP_01_TestProject\obj\Debug\netcoreapp3.1\ASP_01_TestProject.csproj.CopyComplete
 C:\Users\Anton\Cod\ASP.NET\ASP_01_TestProject\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Anton\Cod\ASP.NET\ASP_01_TestProject\bin\Debug\netcoreapp3.1\Docker.DotNet.dll
+C:\Users\Anton\Cod\ASP.NET\ASP_01_TestProject\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
