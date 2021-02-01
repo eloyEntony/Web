@@ -1,1 +1,76 @@
-﻿
+﻿#!groovy
+//  groovy Jenkinsfile
+properties([disableConcurrentBuilds()])
+
+pipeline  {
+    agent { 
+        label 'master'
+        }
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '10'))
+        timestamps()
+    }
+    stages {
+        stage("Create docker image") {
+            steps {
+                echo 'Creating docker image ...'
+                dir('.'){
+                    sh "docker build -t kozyaranton/contact_dot_net . "
+                }
+            }
+        }
+        stage("docker login") {
+            steps {
+                echo " ============== docker login =================="
+                withCredentials([usernamePassword(credentialsId: 'DockerHub-Credentials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+                    sh '''
+                    docker login -u $USERNAME -p $PASSWORD
+                    '''
+                }
+            }
+        }
+        stage("docker push") {
+            steps {
+                echo " ============== pushing image =================="
+                sh '''
+                docker push kozyaranton/contact_dot_net:latest
+                '''
+            }
+        }
+        /*
+        stage("docker stop") {
+            steps {
+                echo " ============== stoping all images =================="
+                sh '''
+                docker stop contact_dot_net
+                '''
+            }
+        } 
+        stage("docker remove") {
+            steps {
+                echo " ============== removing all docker containers =================="
+                sh '''
+                docker rm contact_dot_net
+                '''
+            }
+        }
+        stage("docker run") {
+            steps {
+                echo " ============== starting chatterbox server =================="
+                sh '''
+                docker run -d --restart=always --name contact_dot_net -p 3200:3200 kozyaranton/contact_dot_net
+                '''
+            }
+        }
+        */
+        // stage("Deploy to stage server") {
+        //     steps {
+        //         echo " ============== Running playbook =================="
+        //         sh '''
+        //         ansible-playbook toolbox/ansible/playbooks/demloyToStageServer.yml
+        //         '''
+        //     }
+        //}
+
+    }
+}
