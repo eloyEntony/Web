@@ -46,13 +46,7 @@ pipeline  {
 				
 				
 				
-				dimage = docker.image("kozyaranton/contact_dot_net")
-				dimage.withRun() { /* do nothing; just attempt to spin up container */ }
 				
-				dimage = docker.image("whatever/whatever:99")
-					if (dimage.exists()) {
-					  echo "OKKKKKKKKKKKKKKKKKK"
-					}
 					
 				
                 sh '''
