@@ -44,12 +44,16 @@ pipeline  {
             steps {
                 echo " ============== stoping all images =================="
 				
-				IMAGE_NAME="kozyaranton/contact_dot_net"
 				
-				if docker image ls -a "$IMAGE_NAME" | grep -Fq "$IMAGE_NAME" 1>/dev/null; then
-					echo "Exist"
-				fi
 				
+				dimage = docker.image("kozyaranton/contact_dot_net")
+				dimage.withRun() { /* do nothing; just attempt to spin up container */ }
+				
+				dimage = docker.image("whatever/whatever:99")
+					if (dimage.exists()) {
+					  echo "OKKKKKKKKKKKKKKKKKK"
+					}
+					
 				
                 sh '''
                 docker stop contact_dot_net
