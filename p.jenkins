@@ -44,7 +44,9 @@ pipeline  {
             steps {
                 echo " ============== stoping all images =================="
 				
-				if test ! -z "$(docker images -q <kozyaranton/contact_dot_net>)"; then
+				IMAGE_NAME="kozyaranton/contact_dot_net"
+				
+				if docker image ls -a "$IMAGE_NAME" | grep -Fq "$IMAGE_NAME" 1>/dev/null; then
 					echo "Exist"
 				fi
 				
