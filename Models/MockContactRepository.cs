@@ -55,6 +55,17 @@ namespace ASP_01_TestProject.Models
                     Email = "dsfnvcxp@gmail.com",
                     Phone = "+63 466 212 7654"
                 },
+                new Contact()
+                {
+                    Id = 5,
+                    Name = "Makitra",
+                    Nikname = "Kit",
+                    Address = "San Francisco, San-Andreas, United States",
+                    Position = "Software Engineer",
+                    Avatar = "https://bootdey.com/img/Content/avatar/avatar5.png",
+                    Email = "makitra@gmail.com",
+                    Phone = "+63 544 651 0000"
+                },
 
             };
            

@@ -197,11 +197,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Anton\\Cod\\ASP.NET\\ASP_01_TestProject\\ASP_01_TestProject.csproj",
+      "projectUniqueName": "C:\\Users\\Anton\\Cod\\ASP.NET\\ASP_01_TestProject.csproj",
       "projectName": "ASP_01_TestProject",
-      "projectPath": "C:\\Users\\Anton\\Cod\\ASP.NET\\ASP_01_TestProject\\ASP_01_TestProject.csproj",
+      "projectPath": "C:\\Users\\Anton\\Cod\\ASP.NET\\ASP_01_TestProject.csproj",
       "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Anton\\Cod\\ASP.NET\\ASP_01_TestProject\\obj\\",
+      "outputPath": "C:\\Users\\Anton\\Cod\\ASP.NET\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Anton\\AppData\\Roaming\\NuGet\\NuGet.Config",

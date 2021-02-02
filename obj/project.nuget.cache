@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c/DHZ3VpYxOiyIwmicga2sYXar1ioFYtGODiOGT64hHUx/JT/ugx0WY7F7DOh8Mqv7PP1zyWV2OyXx6rFhQp8A==",
+  "dgSpecHash": "8qPGVhLrFdgHizJ3uIEGr95SPZO7GlcD2MWhlwCPWHOiSmDECwQ7L1Fh99LgmHlO0MVLbH9A2CXDPo+GagAhlA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Anton\\Cod\\ASP.NET\\ASP_01_TestProject\\ASP_01_TestProject.csproj",
+  "projectFilePath": "C:\\Users\\Anton\\Cod\\ASP.NET\\ASP_01_TestProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Anton\\.nuget\\packages\\docker.dotnet\\3.125.4\\docker.dotnet.3.125.4.nupkg.sha512",
     "C:\\Users\\Anton\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
