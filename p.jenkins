@@ -39,7 +39,7 @@ pipeline  {
                 '''
             }
         }
-        /*
+        
         stage("docker stop") {
             steps {
                 echo " ============== stoping all images =================="
@@ -58,13 +58,13 @@ pipeline  {
         }
         stage("docker run") {
             steps {
-                echo " ============== starting chatterbox server =================="
+                echo " ============== starting contact_dot_net server =================="
                 sh '''
-                docker run -d --restart=always --name contact_dot_net -p 3200:3200 kozyaranton/contact_dot_net
+                docker run -d --restart=always --name contact_dot_net -p 80:80 kozyaranton/contact_dot_net
                 '''
             }
         }
-        */
+        
         // stage("Deploy to stage server") {
         //     steps {
         //         echo " ============== Running playbook =================="
