@@ -43,6 +43,12 @@ pipeline  {
         stage("docker stop") {
             steps {
                 echo " ============== stoping all images =================="
+				
+				if test ! -z "$(docker images -q <kozyaranton/contact_dot_net>)"; then
+					echo "Exist"
+				fi
+				
+				
                 sh '''
                 docker stop contact_dot_net
                 '''
