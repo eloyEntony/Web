@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SL_04_youtube", "SL_04_yout
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SL_05_NUnit", "SL_05_NUnit\SL_05_NUnit.csproj", "{951F9EE2-E9AE-4235-837A-086D8150848C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL_06_TestCalc", "SL_06_TestCalc\SL_06_TestCalc.csproj", "{326F6AD4-166E-4D2B-A2AC-659C4514FC0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SL_06_TestCalc", "SL_06_TestCalc\SL_06_TestCalc.csproj", "{326F6AD4-166E-4D2B-A2AC-659C4514FC0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL_07_SendMail", "SL_07_SendMail\SL_07_SendMail.csproj", "{4FD86027-0810-4133-BCBB-C7DD508936AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{326F6AD4-166E-4D2B-A2AC-659C4514FC0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{326F6AD4-166E-4D2B-A2AC-659C4514FC0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{326F6AD4-166E-4D2B-A2AC-659C4514FC0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD86027-0810-4133-BCBB-C7DD508936AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD86027-0810-4133-BCBB-C7DD508936AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD86027-0810-4133-BCBB-C7DD508936AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD86027-0810-4133-BCBB-C7DD508936AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

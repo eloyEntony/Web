@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R2ETvLmCIvqmJo7wSFz7H8Q3l9bafpZh/FtMkGOQEsPvxTJk4ELW0DIbABSgCUzo5lFtXxM6sv0s1UnInMdjQA==",
+  "dgSpecHash": "4Qd4ll4kM5gdokbJ/FF1a1jI5bYyDbHPa/jMgYcImWi7LpCg7tzyIMu4QUIc+LrKc5Acr1+N201l+qm45XMQBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Anton\\Cod\\Selenium\\SL_01\\SL_06_TestCalc\\SL_06_TestCalc.csproj",
+  "projectFilePath": "C:\\Users\\Anton\\Cod\\Selenium\\SL_06_TestCalc\\SL_06_TestCalc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Anton\\.nuget\\packages\\microsoft.codecoverage\\16.8.3\\microsoft.codecoverage.16.8.3.nupkg.sha512",
     "C:\\Users\\Anton\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",

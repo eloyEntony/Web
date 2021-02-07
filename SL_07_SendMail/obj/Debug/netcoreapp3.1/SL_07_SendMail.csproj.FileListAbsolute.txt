@@ -1,0 +1,17 @@
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\bin\Debug\netcoreapp3.1\SL_07_SendMail.exe
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\bin\Debug\netcoreapp3.1\SL_07_SendMail.deps.json
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\bin\Debug\netcoreapp3.1\SL_07_SendMail.runtimeconfig.json
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\bin\Debug\netcoreapp3.1\SL_07_SendMail.runtimeconfig.dev.json
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\bin\Debug\netcoreapp3.1\SL_07_SendMail.dll
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\bin\Debug\netcoreapp3.1\SL_07_SendMail.pdb
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\obj\Debug\netcoreapp3.1\SL_07_SendMail.csprojAssemblyReference.cache
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\obj\Debug\netcoreapp3.1\SL_07_SendMail.AssemblyInfoInputs.cache
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\obj\Debug\netcoreapp3.1\SL_07_SendMail.AssemblyInfo.cs
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\obj\Debug\netcoreapp3.1\SL_07_SendMail.csproj.CoreCompileInputs.cache
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\obj\Debug\netcoreapp3.1\SL_07_SendMail.csproj.CopyComplete
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\obj\Debug\netcoreapp3.1\SL_07_SendMail.dll
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\obj\Debug\netcoreapp3.1\SL_07_SendMail.pdb
+C:\Users\Anton\Cod\Selenium\SL_07_SendMail\obj\Debug\netcoreapp3.1\SL_07_SendMail.genruntimeconfig.cache

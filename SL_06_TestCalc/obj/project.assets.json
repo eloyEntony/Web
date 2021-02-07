@@ -4657,11 +4657,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Anton\\Cod\\Selenium\\SL_01\\SL_06_TestCalc\\SL_06_TestCalc.csproj",
+      "projectUniqueName": "C:\\Users\\Anton\\Cod\\Selenium\\SL_06_TestCalc\\SL_06_TestCalc.csproj",
       "projectName": "SL_06_TestCalc",
-      "projectPath": "C:\\Users\\Anton\\Cod\\Selenium\\SL_01\\SL_06_TestCalc\\SL_06_TestCalc.csproj",
+      "projectPath": "C:\\Users\\Anton\\Cod\\Selenium\\SL_06_TestCalc\\SL_06_TestCalc.csproj",
       "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Anton\\Cod\\Selenium\\SL_01\\SL_06_TestCalc\\obj\\",
+      "outputPath": "C:\\Users\\Anton\\Cod\\Selenium\\SL_06_TestCalc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4730,7 +4730,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
