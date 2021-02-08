@@ -6,6 +6,13 @@
 
 
 <div class="col-md-12">
+
+    <nav aria-label="breadcrumb" class="main-breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+        </ol>
+    </nav>
+
     <div class="page-people-directory">
         <div class="row">
             <div class="col-md-3">
@@ -53,50 +60,36 @@
 
                 <h5><b>My Favorites</b></h5>
                 <div class="list-group people-group">
-                    <a href="#" class="list-group-item">
-                        <div class="media">
-                            <div class="pull-left">
-                                <img class="img-circle" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="...">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">John Wayne</h4>
-                                <small>Software Engineer</small>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="list-group-item">
-                        <div class="media">
-                            <div class="pull-left">
-                                <img class="img-circle" src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="...">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Jane Dane</h4>
-                                <small>Software Engineer</small>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="list-group-item">
-                        <div class="media">
-                            <div class="pull-left">
-                                <img class="img-circle" src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="...">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Juan Dela Cruz</h4>
-                                <small>Software Engineer</small>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="list-group-item">
-                        <div class="media">
-                            <div class="pull-left">
-                                <img class="img-circle" src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="...">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Jose Cruz</h4>
-                                <small>Software Engineer</small>
-                            </div>
-                        </div>
-                    </a>
+
+
+                    @foreach (var user in Model)
+                    {
+                        if (user.isFavorite == true)
+                        {
+                            <a asp-controllers="home" asp-action="user" asp-route-id="@user.Id" class="list-group-item">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        @if (user.Avatar != "")
+                                        {
+                                            <img class="img-circle" src="~/images/@user.Avatar" alt="..." asp-append-version="true">
+                                        }
+                                        else
+                                        {
+                                            <img class="img-circle" src="~/images/0.png" alt="..." asp-append-version="true">
+                                        }
+
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">@user.Name</h4>
+                                        <small>@user.Position</small>
+                                    </div>
+                                </div>
+                            </a>
+                        }
+
+                    }
+                   
+
                 </div>
 
             </div>
@@ -142,13 +135,25 @@
 
                     @foreach (var user in Model)
                     {
-                        <a href="home/user/@user.Id" class="list-group-item">
+                        <a asp-controllers="home" asp-action="user" asp-route-id="@user.Id" class="list-group-item">
                             <div class="media">
                                 <div class="pull-left">
-                                    <img class="img-circle" src="@user.Avatar" alt="...">
+                                    @if (user.Avatar != "")
+                                    {
+                                        <img class="img-circle" src="~/images/@user.Avatar" alt="..." asp-append-version="true">
+                                    }
+                                    else
+                                    {
+                                        <img class="img-circle" src="~/images/0.png" alt="..." asp-append-version="true">
+                                    }
+
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">@user.Name<small>@user.Position</small></h4>
+                                    <h4 class="media-heading">
+                                        @user.Name<small>@user.Position</small>
+                                    </h4>
+
+
                                     <div class="media-content">
                                         <i class="fa fa-map-marker"></i>@user.Address
                                         <ul class="list-unstyled">
@@ -160,11 +165,12 @@
                                 </div>
                             </div>
                         </a>
+                        
                     }
 
-                    @section TestSection{ 
+                    @*@section TestSection{
                         <h2>Test section works!</h2>
-                    }
+                    }*@
 
 
                 </div>
@@ -198,33 +204,66 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="contact-add-content">
-                                    <form class="form-horizontal tabular-form margin-top-10">
+                                    <form class="form-horizontal tabular-form margin-top-10" asp-controller="home" asp-action="index" method="post">
+                                        <div class="form-group" style="visibility:hidden">
+                                            <label for="name" class="col-sm-2 control-label">ID</label>
+                                            <div class="col-sm-10 tabular-border">
+                                                <input type="text" class="form-control" id="Id" placeholder="ID" name="id" />
+                                            </div>
+                                        </div>
                                         <div class="form-group">
                                             <label for="name" class="col-sm-2 control-label">Name</label>
                                             <div class="col-sm-10 tabular-border">
-                                                <input type="text" class="form-control" id="name" placeholder="Full Name">
+                                                <input type="text" class="form-control" id="name" placeholder="Full Name" name="name" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nickName" class="col-sm-2 control-label">NickName</label>
+                                            <div class="col-sm-10 tabular-border">
+                                                <input type="text" class="form-control" id="nickName" placeholder="NickName" name="nick">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="position" class="col-sm-2 control-label">Position</label>
+                                            <div class="col-sm-10 tabular-border">
+                                                <input type="text" class="form-control" id="position" placeholder="Position" name="position">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="email" class="col-sm-2 control-label">Email</label>
                                             <div class="col-sm-10 tabular-border">
-                                                <input type="text" class="form-control" id="email" placeholder="Email">
+                                                <input type="text" class="form-control" id="email" placeholder="Email" name="email">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="phone" class="col-sm-2 control-label">Phone</label>
                                             <div class="col-sm-10 tabular-border">
-                                                <input type="text" class="form-control" id="phone" placeholder="Phone">
+                                                <input type="text" class="form-control" id="phone" placeholder="Phone" name="phone">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="address" class="col-sm-2 control-label">Address</label>
                                             <div class="col-sm-10 tabular-border">
-                                                <input type="text" class="form-control" id="address" placeholder="Address">
+                                                <input type="text" class="form-control" id="address" placeholder="Address" name="address">
                                             </div>
                                         </div>
+
+                                        
+
+                                            @*<div>
+                                                
+                                                <br />
+                                                <FileUpload ID="FileUpload1" runat="server" />
+                                                <br /><br />
+                                                <Button ID="btnsave" runat="server" onclick="btnsave_Click" Text="Save" style="width:85px" />
+                                                <br /><br />                                                
+                                            </div>*@
+
+                                        
+
                                         <div class="form-actions">
-                                            <button type="button" class="btn btn-silver btn-flat">Cancel</button> <button type="button" class="btn btn-green btn-flat">Save Changes</button>
+                                            <button type="button" class="btn btn-silver btn-flat">Cancel</button>
+                                            <button id="save" type="submit" class="btn btn-green btn-flat">Save Changes</button>
                                         </div>
                                     </form>
                                 </div>

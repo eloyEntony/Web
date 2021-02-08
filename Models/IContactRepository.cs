@@ -10,5 +10,12 @@ namespace ASP_01_TestProject.Models
         Contact GetContact(int Id);
 
         List<Contact> GetContacts();
+
+        void AddContact(Contact contact);
+
+        Contact Update(Contact contact);
+        void Delete(int id);
+
+        List<Contact> GetFavorite();
     }
 }

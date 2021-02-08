@@ -15,6 +15,7 @@ namespace ASP_01_TestProject.Models
         public string Nikname { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
+        public bool isFavorite { get; set; }
 
     }
 }

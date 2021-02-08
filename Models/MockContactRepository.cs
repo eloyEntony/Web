@@ -18,7 +18,7 @@ namespace ASP_01_TestProject.Models
                     Nikname = "Bobka",
                     Address = "San Francisco, California, United States",
                     Position = "Software Engineer",
-                    Avatar = "https://bootdey.com/img/Content/avatar/avatar1.png",
+                    Avatar = "1.png",
                     Email = "abracadabra@gmail.com",
                     Phone = "+63 912 212 2451"
                 },
@@ -29,7 +29,7 @@ namespace ASP_01_TestProject.Models
                     Nikname = "Macysia",
                     Address = "San Francisco, California, United States",
                     Position = "Software Engineer",
-                    Avatar = "https://bootdey.com/img/Content/avatar/avatar2.png",
+                    Avatar = "2.png",
                     Email = "vcb126435ff@gmail.com",
                     Phone = "+63 432 456 1321"
                 },
@@ -40,7 +40,7 @@ namespace ASP_01_TestProject.Models
                     Nikname = "Bilka",
                     Address = "San Francisco, California, United States",
                     Position = "Software Engineer",
-                    Avatar = "https://bootdey.com/img/Content/avatar/avatar3.png",
+                    Avatar = "3.png",
                     Email = "erw3142fjs@gmail.com",
                     Phone = "+63 588 212 5643"
                 },
@@ -51,7 +51,7 @@ namespace ASP_01_TestProject.Models
                     Nikname = "Loba",
                     Address = "San Francisco, California, United States",
                     Position = "Software Engineer",
-                    Avatar = "https://bootdey.com/img/Content/avatar/avatar4.png",
+                    Avatar = "4.png",
                     Email = "dsfnvcxp@gmail.com",
                     Phone = "+63 466 212 7654"
                 },
@@ -62,7 +62,7 @@ namespace ASP_01_TestProject.Models
                     Nikname = "Kit",
                     Address = "San Francisco, San-Andreas, United States",
                     Position = "Software Engineer",
-                    Avatar = "https://bootdey.com/img/Content/avatar/avatar5.png",
+                    Avatar = "",
                     Email = "makitra@gmail.com",
                     Phone = "+63 544 651 0000"
                 },
@@ -70,6 +70,30 @@ namespace ASP_01_TestProject.Models
             };
            
         }
+
+        public void AddContact(Contact contact)
+        {
+            _contacts.Add(new Contact() { Name = contact.Name, 
+                                            Address = contact.Address, 
+                                            Email = contact.Email,                                            
+                                            Nikname = contact.Nikname, 
+                                            Phone = contact.Phone, 
+                                            Position = contact.Position,
+                                            Id = _contacts.Count + 1,
+                                            Avatar = ""
+            });
+        }
+
+        public void Delete(Contact contact)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Contact GetContact(int Id)
         {
             return _contacts.FirstOrDefault(x=>x.Id == Id);
@@ -78,6 +102,16 @@ namespace ASP_01_TestProject.Models
         public List<Contact> GetContacts()
         {
             return _contacts;
+        }
+
+        public List<Contact> GetFavorite()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Contact Update(Contact contact)
+        {
+            throw new NotImplementedException();
         }
     }
 }
