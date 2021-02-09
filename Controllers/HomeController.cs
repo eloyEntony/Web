@@ -71,11 +71,10 @@ namespace ASP_01_TestProject.Controllers
             contactRepository.Delete(id);
             return RedirectToAction("Index");
         }
-
-        public IActionResult Favorite()
+        
+        public IActionResult Admin()
         {
-            var model = contactRepository.GetFavorite();
-            return View(model);
+            return View();
         }
 
 
