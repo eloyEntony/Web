@@ -26,7 +26,6 @@ namespace ASP_01_TestProject
         {
             services.AddMvc();
             services.AddScoped<IContactRepository, SQLContactRepository>();
-
             services.AddDbContext<AppDBContext>(options => 
                     options.UseSqlServer(_config.GetConnectionString("ContactList")));
             services.AddControllersWithViews();
@@ -38,6 +37,10 @@ namespace ASP_01_TestProject
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");
             }
             #region
             /*

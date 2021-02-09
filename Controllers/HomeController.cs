@@ -49,6 +49,12 @@ namespace ASP_01_TestProject.Controllers
         public IActionResult User(int id)
         {
             var model = contactRepository.GetContact(id);
+
+            if(model== null)
+            {
+                Response.StatusCode = 404;
+                return View("NotFound");
+            }
             return View(model);
         }
         [HttpPost]

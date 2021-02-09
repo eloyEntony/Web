@@ -112,3 +112,8 @@ C:\Users\Anton\Cod\ASP.NET\obj\Debug\netcoreapp3.1\ASP_01_TestProject.dll
 C:\Users\Anton\Cod\ASP.NET\obj\Debug\netcoreapp3.1\ASP_01_TestProject.pdb
 C:\Users\Anton\Cod\ASP.NET\obj\Debug\netcoreapp3.1\ASP_01_TestProject.genruntimeconfig.cache
 C:\Users\Anton\Cod\ASP.NET\obj\Debug\netcoreapp3.1\ASP_01_TestProject.csprojAssemblyReference.cache
+C:\Users\Anton\Cod\ASP.NET\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\Anton\Cod\ASP.NET\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Users\Anton\Cod\ASP.NET\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+C:\Users\Anton\Cod\ASP.NET\obj\Debug\netcoreapp3.1\Razor\Views\Shared\NotFound.cshtml.g.cs
+C:\Users\Anton\Cod\ASP.NET\bin\Debug\netcoreapp3.1\nlog.config
